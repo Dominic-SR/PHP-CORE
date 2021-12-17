@@ -17,7 +17,7 @@ if($count !== 0){
     header("location:../../Pages/index.php");
  }
  else{
-     header("location:../Login.php");
+     header("location:../Login.php?msg=Login Failed...!");
  }
 ?>
 <script>window.location.href="../Login.php";</script>

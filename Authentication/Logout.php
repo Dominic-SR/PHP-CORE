@@ -1,5 +1,5 @@
 <?php
 session_start();
 session_destroy();
-header("location:login.php?mes= You are Logout.");
+header("location:Login.php?mes= You are Logout.");
 ?>

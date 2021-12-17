@@ -1,3 +1,7 @@
+<?php
+error_reporting(0);
+$get = $_GET['msg'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +15,9 @@
 <body>
 
 <div class="container">
-  <h2>Register form</h2>
+  <h2>Login form</h2>
   <form class="form-horizontal" method="POST" action="./Actions/LoginAction.php">
-
+    <div style="backgroundcolor:red"><h1><?php echo $get; ?></h1></div>
     <div class="form-group">
       <label class="control-label col-sm-2" >Email</label>
       <div class="col-sm-6">          
@@ -31,7 +35,9 @@
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
         <button type="submit" class="btn btn-success">Login</button>
+        <a href="Register.php" class="btn btn-success">Register</a>
       </div>
+      
     </div>
   </form>
 </div>

@@ -9,8 +9,8 @@ $image=$_FILES["image"]["name"];
 $lcoation=$target.$image;
 move_uploaded_file($_FILES['image']['tmp_name'],$lcoation);
 
-$sql = "insert into CRUD (name,count,img) values ('$name','$count','$image')";
-
+echo $sql = "insert into CRUD (name,count,img) values ('$name','$count','$image')";
+exit();
 $result = mysqli_query($con,$sql);
 ?>
 <script>window.location.href="../index.php";</script>
